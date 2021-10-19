@@ -46,14 +46,15 @@ const disableLetterButton = buttonEl => {
 //
 const isLetterInWord = letter => {
     $(`div.${letter}`)[0] !== undefined;
-    
-    console.log(true)
+    return true
+    // console.log(true)
 };
 
 // Called when `letter` is in word. Update contents of divs with `letter`.
 //
 const handleCorrectGuess = letter => {
   // Replace this with your code
+  $(`div.${letter}`).append(`<p>${letter}</p>`);
 };
 
 // Called when `letter` is not in word.
